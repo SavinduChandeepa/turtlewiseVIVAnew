@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="international-telephone-input.css">
+  
+  <link rel="stylesheet" href="Details-styles.css">
+ 
+  <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+<style>
+  
+  table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+  }
+  th, td {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 8px;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.719);
+  }
+
+  ul {
+            top: 100% !important;
+            transform: translateY(0%) !important;
+        }
+
+        .iti {
+            position: relative;
+            display: inline-block;
+        }
+
+        input[type=tel] {
+            padding-right: 6px;
+            padding-left: 52px;
+            margin-left: 0;
+
+            position: relative;
+            z-index: 0;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            margin-right: 0;
+            border: 1px solid #CCC;
+            width: 270px;
+            height: 35px;
+            /* padding: 6px 12px; */
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 100%;
+            color: inherit;
+        }
+
+        button {
+            color: #FFF;
+            background-color: #428BCA;
+            border: 1px solid #357EBD;
+            height: 39px;
+            margin: 0;
+            padding: 6px 20px;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 100%;
+        }
+
+        button:hover {
+            background-color: #3276B1;
+            border-color: #285E8E;
+            cursor: pointer;
+        }
+</style>  
+</head>
+<body>
+
+
+<div class="main">
+<div class="summary-table-22"> 
+
+<h2>Booking Summary</h2>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <td id="DateSelected">Select a date</td>
+  </tr>
+  <tr>
+    <th>Time</th>
+    <td id="timeSlotSelection">---</td>
+  </tr>
+  <tr>
+    <th>Duration</th>
+    <td id="VisitDuration">---</td>
+  </tr>
+  <tr>
+    <th>Tickets</th>
+    <th>Charges</th>
+  </tr>
+  <tr>
+    <td><div>SL Child: <span id="LankanChildTicket">0</span></div></td>
+    <td><div> <span id="LankanChildCharge">0</span> USD</div></td>
+  </tr>
+  <tr>
+    <td><div>SL Adult: <span id="LankanAdultTicket">0</span></div></td>
+    <td><div> <span id="LankanAdultCharge">0</span> USD</div></td>
+  </tr>
+  <tr>
+    <td><div>Foreigner Child: <span id="ForeignChildTicket">0</span></div></td>
+    <td><div> <span id="ForeignChildCharge">0</span> USD</div></td>
+  </tr>
+  <tr>
+    <td><div>Foreigner Adult: <span id="ForeignAdultTicket">0</span></div></td>
+    <td><div> <span id="ForeignAdultCharge">0</span> USD</div></td>
+  </tr>
+  <tr>
+    <td><div>Infant: <span id="InfantTicket">0</span></div></td>
+    <td><div> <span id="InfantCharge">0</span> USD</div></td>
+  </tr>
+  <tr>
+    <th>Total Payable</th>
+    <th id="PriceSummary">---</th>
+  </tr>
+</table>
+</div> 
+
+</div> 
+
+<div class="container">
+    <form id="personalInfoForm">
+      <h2 id="PItitle">Enter Personal Information</h2>
+     <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()" required>
+        <span id="name-error"></span>
+      </div>
+
+   
+    <label>Telephone No</label>
+    <div class="iti">
+  
+      <input type="tel" name="phone" required id="contact-phone">
+      <span id="phone-error"> </span>
+    </div>
+     
+
+
+
+      <div class="input-group">
+        <label>Email Id</label>
+        <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()" required>
+        <span id="email-error"></span>
+      </div>
+     
+
+    
+<div class="input-group">
+        <label>Confirm Email</label>
+        <input id="contact-email2" type="email" placeholder="Confirm Email" onkeyup="ConfirmEmail()" required>
+        <span id="email2-error"></span>
+      </div>
+
+      <button type="submit">Submit</button>
+
+  </form>
+</div>
+</div>
+
+
+
+
+
+
+
+  <script src="international-telephone-input.js"></script>
+  <script src="Details.js"></script>
+
+
+
+
+
+</html>

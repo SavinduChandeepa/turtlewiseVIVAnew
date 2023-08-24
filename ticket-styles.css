@@ -1,0 +1,423 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    background-position: center;
+    background-image: url(turtle\ 11.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    
+}
+@media (max-width:700px){
+    body{
+    
+            background-image: url('turtle\ 11.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+        
+    }
+
+}
+/*-----------------------------------------------------h1 & p---------------------------------------*/
+h1{
+        
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    text-align: center;
+    color: #FFC312;
+    margin-bottom: 3px;
+    margin-top: 70px;
+    
+
+}
+@media (max-width:700px){
+    h1{
+        font-size: 40px;
+    }
+}
+
+h2{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 40px;
+
+    color:#bebc31;
+    
+    margin-bottom: 20px;
+    
+
+}
+ p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    font-size: 25px;
+    padding: 10px 10px;
+    padding-top: -10px;
+    margin-bottom: 10px;
+    opacity: 1;
+ }
+
+
+
+ .hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #d35400;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: #d35400;
+    position: relative;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 340px;
+}
+.hero-btn:hover{
+    border: 1px solid #9b3f02 ;
+    background: #9b3f02;
+    transition: 500ms;
+}
+.btn .hero-btn{
+    border-color: white;
+    color: white;
+    border-radius: 0;
+    margin-bottom: 20px;
+    
+}
+@media(max-width:700px){
+    .hero-btn{
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        border: 1px solid #d35400;
+        padding: 12px 34px;
+        font-size: 18px;
+        background: #d35400;
+        position: relative;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+}
+
+.container-title {
+    position: relative;
+    height: 20%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -100px;
+  }
+  
+  .container-title h1 {
+    font-family: 'Syncopate', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3vw;
+    line-height: 1.2;
+    font-size: 3vw;
+    text-align: center;
+    
+  }
+
+   .container-title h1 span {
+      display: block;
+      font-size: 10vw;
+      letter-spacing: -1.3vw;
+      word-spacing: 3vw;
+      margin-top: 90px;
+    }
+
+    @media(max-width:700px){
+        .container-title{
+            margin-bottom: -50px;
+            margin-top: 90px;
+            
+
+        }
+        .container-title h1{
+            margin-top: 100px;
+            font-size: 22px;
+        }
+        .container-title h1 span{
+            font-size: 65px;
+        }
+
+    }
+
+
+/*----------------------------------------------------- background---------------------------------------*/
+.card{
+    width:70%;
+    height: 100%;
+    z-index:-1;
+    background-color: rgba(0, 0, 0, 0.507);
+    overflow:auto;
+    margin-left: 250px;
+    
+
+}
+@media (max-width:700px){
+    .card{
+        width: 100%;
+        overflow: none;
+        align-items: center;
+        margin-left: 0px;
+        
+        
+    }
+}
+ 
+
+ 
+  /*-----------------------------------------------------html, body, titlebox---------------------------------------*/
+html, body {
+    height: 100%;
+  }
+  html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 150%;
+    line-height: 1.4;
+  }
+  body {
+    margin: 0;
+  }
+
+  .title-box{
+    background: transparent;
+    margin-top: 70px;
+  }
+  .container{
+    text-align: center;
+    background-color:#edeae0;
+    width: 95%;
+    align-self: center;
+    height:fit-content;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    
+}
+
+  /*-----------------------------------------------------Main title---------------------------------------*/
+  
+  .container-title {
+    position: relative;
+    height: 30%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container-title h1 {
+    font-family: 'Syncopate', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3vw;
+    line-height: 1.2;
+    font-size: 3vw;
+    text-align: center;
+    margin-bottom: 200px;
+  }
+
+   .container-title h1 span {
+      display: block;
+      font-size: 10vw;
+      letter-spacing: -1.3vw;
+      word-spacing: 3vw;
+      margin-top: 90px;
+    }
+
+    @media(max-width:700px){
+        .container-title{
+            margin-bottom: -50px;
+            margin-top: 90px;
+            
+
+        }
+        .container-title h1{
+            margin-top: 100px;
+            font-size: 22px;
+        }
+        .container-title h1 span{
+            font-size: 65px;
+        }
+
+    }
+
+
+
+
+
+
+
+/*-------------------------------------------------Date--------------------------------------------------------*/
+#reservation-id{
+  
+  
+  margin-top: 30px;
+  border-radius: 10px;
+  color: rgb(24, 23, 18);
+  font-size: larger;
+}
+
+.dateMain{
+    text-align: center;
+}
+
+/*----------------------------------------------Duration------------------------------------*/
+.timeS {
+    /* Increase the size of the checkboxes */
+    transform: scale(1.9);
+   /* Add some spacing between checkbox and label */
+    
+    margin-right: 20px;
+    margin-left: 360px;
+    
+  }
+  @media (max-width:700px){
+    .timeS{
+        margin-left: 100px;
+        margin-right: 10px;
+        transform: scale(1.4);
+        margin-bottom: 2px;
+    }
+  }
+
+
+
+label {
+    font-family: 'Poppins', sans-serif;;
+    font-size: 20px; 
+    color: #ddcece; 
+    cursor: pointer; 
+  }
+
+/*-----------------------------------------------number spinner---------------------------------------------*/
+.number-spinner{
+  position: relative;
+  transform: translate(-50%,-50%);
+  top: 10%;
+  left: 60%;
+  display: flex;
+  background-color: rgb(248, 95, 6);
+  box-shadow: rgba(0, 0, 0, 0.781);
+  border-radius: 45px;
+  width:26%;
+  margin-top: 50px;
+  margin-left: 100px;
+ 
+
+}
+input[type="number"]{
+  -moz-appearance: textfield;
+  text-align: center;
+  font-size: 40px;
+  border: none;
+  background-color: transparent;
+  color: black;
+
+}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+button{
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  
+}
+#decrement{
+  padding: 15px 5px 15px 25px;
+  border-radius: 45px 0 0 45px;
+
+}
+#increment{
+  padding: 15px 25px 15px 5px;
+  border-radius: 0 45px 45px 0;
+  
+}
+
+.spinner-header{
+  display: flex;
+  margin-left: 30%;
+  margin-top: -100px;
+  
+}
+.spinner-header p{
+  font-size: larger;
+  color: #fff;
+  margin-left: -100px;
+ 
+}
+
+.spinners{
+    text-align: center;
+}
+
+@media(max-width:700px){
+    button{
+        font-size: 28px;
+    } 
+    .spinner-header{
+        margin-top: -70px;
+        font-size: medium;
+        margin-left: 120px;
+  
+    }
+    .number-spinner{
+        position: relative;
+        transform: translate(-10%,-10%);
+       
+        left: 10%;
+        display: flex;
+        background-color: rgb(248, 95, 6);
+        box-shadow: rgba(0, 0, 0, 0.781);
+        border-radius: 45px;
+        width:35%;
+        margin-top: 50px;
+        margin-left: 200px;
+        margin-bottom: 20px;
+}
+#decrement{
+    padding: 3px 1px 0px 20px;
+    border-radius: 45px 0 0 45px;
+    
+  
+  }
+  #increment{
+    padding: 3px 1px 0px 1px;
+    border-radius: 0 45px 45px 0;
+    
+  }
+  input[type="number"]{
+    -moz-appearance: textfield;
+    text-align: center;
+    font-size: 40px;
+    border: none;
+    background-color: transparent;
+    color: black;
+    width: 70px;
+  
+  }
+}
+
+
+
+
+  
+ 
+  

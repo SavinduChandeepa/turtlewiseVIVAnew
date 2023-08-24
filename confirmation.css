@@ -1,0 +1,151 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+
+}
+body{
+    background-position: center;
+    background-image: url(turtle\ 11.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    
+}
+@media (max-width:700px){
+    body{
+    
+            background-image: url('turtle\ 11.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+        
+    }
+
+}
+/*-----------------------------------------------------h1 & p---------------------------------------*/
+h1{
+        
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    text-align: center;
+    color: #FFC312;
+    margin-bottom: 3px;
+    margin-top: 70px;
+    
+
+}
+@media (max-width:700px){
+    h1{
+        font-size: 40px;
+    }
+}
+
+h2{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 40px;
+
+    color:#bebc31;
+    
+    margin-bottom: 20px;
+    
+
+}
+ p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    font-size: 25px;
+    padding: 10px 10px;
+    padding-top: -10px;
+    margin-bottom: 10px;
+    opacity: 1;
+ }
+
+
+
+ .hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #d35400;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: #d35400;
+    position: relative;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 340px;
+}
+.hero-btn:hover{
+    border: 1px solid #9b3f02 ;
+    background: #9b3f02;
+    transition: 500ms;
+}
+.btn .hero-btn{
+    border-color: white;
+    color: white;
+    border-radius: 0;
+    margin-bottom: 20px;
+    
+}
+@media(max-width:700px){
+    .hero-btn{
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        border: 1px solid #d35400;
+        padding: 12px 34px;
+        font-size: 18px;
+        background: #d35400;
+        position: relative;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+}
+
+
+
+    .container{
+        text-align: center;
+        background-color:rgba(0, 0, 0, 0.623);
+        width: 95%;
+        align-self: center;
+        height:fit-content;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        margin-left: 25px;
+        
+        
+    }
+    .container p{
+        color: #fff;
+    }
+    @media(max-width:700px){
+      .container{
+        margin-left: 10px;
+      }  
+    }
+/*------------------Summary table----------------------------------------*/
+.summary-table-22{
+    margin-bottom: 20px;
+}
+.summary-table-22 th{
+    color: #FFC312;
+}
+@media(max-width:700px){
+   .summary-table-22{
+    margin-left: 0px;
+    
+   }
+  
+}

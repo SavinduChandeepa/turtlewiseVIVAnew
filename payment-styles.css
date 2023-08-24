@@ -1,0 +1,447 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    
+}
+body{
+    background-position: center;
+    background-image: url(turtle\ 11.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    
+}
+@media (max-width:700px){
+    body{
+    
+            background-image: url('turtle\ 11.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+        
+    }
+
+}
+/*-----------------------------------------------------h1 & p---------------------------------------*/
+h1{
+        
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    text-align: center;
+    color: #FFC312;
+    margin-bottom: 3px;
+    margin-top: 70px;
+    
+
+}
+@media (max-width:700px){
+    h1{
+        font-size: 40px;
+    }
+}
+
+h2{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 40px;
+
+    color:#bebc31;
+    
+    margin-bottom: 20px;
+    
+
+}
+ p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    font-size: 25px;
+    padding: 10px 10px;
+    padding-top: -10px;
+    margin-bottom: 10px;
+    opacity: 1;
+ }
+
+
+
+ .hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #d35400;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: #d35400;
+    position: relative;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 340px;
+}
+.hero-btn:hover{
+    border: 1px solid #9b3f02 ;
+    background: #9b3f02;
+    transition: 500ms;
+}
+.btn .hero-btn{
+    border-color: white;
+    color: white;
+    border-radius: 0;
+    margin-bottom: 20px;
+    
+}
+@media(max-width:700px){
+    .hero-btn{
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        border: 1px solid #d35400;
+        padding: 12px 34px;
+        font-size: 18px;
+        background: #d35400;
+        position: relative;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+}
+
+
+/*------------------Summary table----------------------------------------*/
+
+
+.summary-table-22{
+    float: right;
+    width: 50%; 
+}
+.summary-table-22 th{
+    color: #FFC312;
+}
+@media(max-width:700px){
+   .summary-table-22{
+    margin-left: 0px;
+    
+   }
+  
+}
+
+
+/*------------------------------------------------Payment Form---------------------------------------------*/
+
+.PFcontainer{
+    min-height: 100vh;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+    float: left;
+    width: 50%; 
+    text-transform: uppercase;
+
+}
+@media(max-width:700px){
+    .summary-table-22{
+     margin-left: 0px;
+     
+    }
+   
+ }
+ @media(max-width:700px){
+   .main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   }
+    
+   
+ }
+
+.PFcontainer form{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+    padding: 20px;
+    width: 500px;
+    padding-top: 160px;
+}
+
+.PFcontainer form .inputBox{
+    margin-top: 20px;
+}
+
+.PFcontainer form .inputBox span{
+    display: block;
+    color:#999;
+    padding-bottom: 5px;
+}
+
+.PFcontainer form .inputBox input,
+.PFcontainer form .inputBox select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border:1px solid rgba(0,0,0,.3);
+    color:#444;
+}
+
+.PFcontainer form .flexbox{
+    display: flex;
+    gap:15px;
+}
+
+.PFcontainer form .flexbox .inputBox{
+    flex:1 1 150px;
+}
+
+.PFcontainer form .submit-btn{
+    width: 100%;
+    background:linear-gradient(45deg, rgb(226, 198, 43), rgb(255, 208, 0));
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color:#fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.PFcontainer form .submit-btn:hover{
+    letter-spacing: 2px;
+    opacity: .8;
+}
+
+.PFcontainer .card-container{
+    margin-bottom: -150px;
+    position: relative;
+    height: 250px;
+    width: 400px;
+}
+
+.PFcontainer .card-container .front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0; left: 0;
+    background:linear-gradient(45deg, rgb(44, 29, 10), rgb(110, 110, 102));
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    padding:20px;
+    transform:perspective(1000px) rotateY(0deg);
+    transition:transform .4s ease-out;
+}
+
+.PFcontainer .card-container .front .image{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.PFcontainer .card-container .front .image img{
+    height: 50px;
+}
+
+.PFcontainer .card-container .front .card-number-box{
+    padding:30px 0;
+    font-size: 22px;
+    color:#fff;
+}
+
+.PFcontainer .card-container .front .flexbox{
+    display: flex;
+}
+
+.PFcontainer .card-container .front .flexbox .box:nth-child(1){
+    margin-right: auto;
+}
+
+.PFcontainer .card-container .front .flexbox .box{
+    font-size: 15px;
+    color:#fff;
+}
+
+.PFcontainer .card-container .back{
+    position: absolute;
+    top:0; left: 0;
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(45deg, rgb(44, 29, 10), rgb(110, 110, 102));
+    border-radius: 5px;
+    padding: 20px 0;
+    text-align: right;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    transform:perspective(1000px) rotateY(180deg);
+    transition:transform .4s ease-out;
+}
+
+.PFcontainer .card-container .back .stripe{
+    background: #000;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+}
+
+.PFcontainer .card-container .back .box{
+    padding: 0 20px;
+}
+
+.PFcontainer .card-container .back .box span{
+    color:#fff;
+    font-size: 15px;
+
+}
+
+.PFcontainer .card-container .back .box .cvv-box{
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    color:#333;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+    
+}
+
+.PFcontainer .card-container .back .box img{
+    margin-top: 30px;
+    height: 30px;
+}
+
+
+@media(max-width:700px){
+    .PFcontainer{
+        min-height: 100vh;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        padding-bottom: 60px;
+        margin-left: 25%;
+        margin-top: 0px;
+        margin-top: 20px;
+    }
+    
+    .PFcontainer form{
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 10px 15px rgba(0,0,0,.1);
+        padding: 20px;
+        width: 350px;
+        padding-top: 160px;
+    }
+    .PFcontainer .card-container .front .image{
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        padding-top: 10px;
+        ;
+    }
+    
+    .PFcontainer .card-container .front .image img{
+        height: 50px;
+      
+    }
+    
+    .PFcontainer .card-container .front .card-number-box{
+        padding:30px 0;
+        font-size: 22px;
+        color:#fff;
+    }
+    
+    .PFcontainer .card-container .front .flexbox{
+        display: flex;
+    }
+    
+    .PFcontainer .card-container .front .flexbox .box:nth-child(1){
+        margin-right: auto;
+    }
+    
+    .PFcontainer .card-container .front .flexbox .box{
+        font-size: 15px;
+        color:#fff;
+    }
+    .PFcontainer .card-container .front{
+        position: absolute;
+        height: 100%;
+        margin-left: 20px;
+        width: 90%;
+        top: 0; left: 0;
+        background:linear-gradient(45deg, blueviolet, rgb(55, 20, 255));
+        border-radius: 5px;
+        backface-visibility: hidden;
+        box-shadow: 0 15px 25px rgba(0,0,0,.2);
+        padding:20px;
+        transform:perspective(1000px) rotateY(0deg);
+        transition:transform .4s ease-out;
+    }
+    
+    .PFcontainer .card-container .back{
+        position: absolute;
+        top:0; left: 0;
+        height: 100%;
+        width: 90%;
+        margin-left: 20px;
+        background:linear-gradient(45deg, blueviolet, deeppink);
+        border-radius: 5px;
+        padding: 20px 0;
+        text-align: right;
+        backface-visibility: hidden;
+        box-shadow: 0 15px 25px rgba(0,0,0,.2);
+        transform:perspective(1000px) rotateY(180deg);
+        transition:transform .4s ease-out;
+    }
+    
+    .PFcontainer .card-container .back .stripe{
+        background: #000;
+        width: 100%;
+        margin: 10px 0;
+        height: 50px;
+    }
+    
+    .PFcontainer .card-container .back .box{
+        padding: 0 20px;
+    }
+    
+    .PFcontainer .card-container .back .box span{
+        color:#fff;
+        font-size: 15px;
+       
+    }
+    
+    .PFcontainer .card-container .back .box .cvv-box{
+        height: 50px;
+        padding: 10px;
+        margin-top: 5px;
+        color:#333;
+        background: #fff;
+        border-radius: 5px;
+        width: 100%;
+    }
+    
+    .PFcontainer .card-container .back .box img{
+        margin-top: 30px;
+        height: 30px;
+    }
+    .PFcontainer .card-container .back .box .cvv-box{
+        height: 50px;
+        padding: 10px;
+        margin-top: 5px;
+        color:#333;
+        background: #fff;
+        border-radius: 5px;
+        width: 100%;
+        
+    }
+    
+        
+}

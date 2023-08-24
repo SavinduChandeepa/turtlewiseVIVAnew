@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="ticket-styles.css">
+<style>
+  table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+  }
+  th, td {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 8px;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.719);
+  }
+</style>
+</head>
+
+ 
+    <body>
+      <div class="card">
+      <div class="container-title">
+        <h1>
+        
+        <span>Buy tickets</span>
+      </h1>
+    </div>
+
+
+
+    <div class="dateMain">
+        <div class="title-box"><h1>Dates</h1></div>
+        <div class="date">
+          <input type="date" id="reservation-id" onchange="updateDateSelected()">
+        </div>
+    </div>
+
+
+
+<h1>Select Time Slots</h1>
+
+
+
+<label><input type="checkbox" class="timeS" value="7.00am-8.00am"> 7.00am-8.00am</label><br>
+<label><input type="checkbox" class="timeS" value="8.00am-9.00am"> 8.00am-9.00am</label><br>
+<label><input type="checkbox" class="timeS" value="9.00am-10.00am"> 9.00am-10.00am</label><br>
+<label><input type="checkbox" class="timeS" value="10.00am-11.00am"> 10.00am-11.00am</label><br>
+<label><input type="checkbox" class="timeS" value="11.00am-12.00pm"> 11.00am-12.00pm</label><br>
+<label><input type="checkbox" class="timeS" value="12.00pm-1.00pm"> 12.00pm-1.00pm</label><br>
+<label><input type="checkbox" class="timeS" value="1.00pm-2.00pm"> 1.00pm-2.00pm</label><br>
+<label><input type="checkbox" class="timeS" value="2.00pm-3.00pm"> 2.00pm-3.00pm</label><br>
+<label><input type="checkbox" class="timeS" value="3.00pm-4.00pm"> 3.00pm-4.00pm</label><br>
+<label><input type="checkbox" class="timeS" value="4.00pm-5.00pm"> 4.00pm-5.00pm</label><br>
+<label><input type="checkbox" class="timeS" value="5.00pm-6.00pm"> 5.00pm-6.00pm</label><br> 
+
+
+
+
+<div class="spinners">
+<h1>Guests</h1>
+<h2>Select Ticket Quantities</h2>
+
+<div class="spinner-row">
+  <div class="number-spinner" id="SL-child">
+    <button onclick="stepperSLC(-1)" id="decrement"> - </button>
+    <input type="number" min="0" max="100" step="1" value="0" id="SLC" readonly>
+    <button onclick="stepperSLC(1)" id="increment">+</button>
+  </div>
+  <div class="spinner-header">
+    <p>Sri Lankan Child</p>
+  </div>
+</div>
+
+<div class="spinner-row">
+  <div class="number-spinner" id="SL-adult">
+    <button onclick="stepperSLA(-1)" id="decrement"> - </button>
+    <input type="number" min="0" max="100" step="1" value="0" id="SLA" readonly>
+    <button onclick="stepperSLA(1)" id="increment">+</button>
+  </div>
+  <div class="spinner-header">
+    <p>Sri Lankan Adult</p>
+  </div>
+</div>
+
+<div class="spinner-row">
+  <div class="number-spinner" id="foreigner-child">
+    <button onclick="stepperFC(-1)" id="decrement"> - </button>
+    <input type="number" min="0" max="100" step="1" value="0" id="FC" readonly>
+    <button onclick="stepperFC(1)" id="increment">+</button>
+  </div>
+  <div class="spinner-header">
+    <p>Foreigner Child</p>
+  </div>
+</div>
+
+<div class="spinner-row">
+  <div class="number-spinner" id="foreigner-adult">
+    <button onclick="stepperFA(-1)" id="decrement"> - </button>
+    <input type="number" min="0" max="100" step="1" value="0" id="FA" readonly>
+    <button onclick="stepperFA(1)" id="increment">+</button>
+  </div>
+  <div class="spinner-header">
+    <p>Foreigner Adult</p>
+  </div>
+</div>
+
+<div class="spinner-row">
+  <div class="number-spinner" id="infant">
+    <button onclick="stepperInf(-1)" id="decrement"> - </button>
+    <input type="number" min="0" max="100" step="1" value="0" id="inf" readonly>
+    <button onclick="stepperInf(1)" id="increment">+</button>
+  </div>
+  <div class="spinner-header">
+    <p>Infant</p>
+  </div>
+</div>
+</div>
+
+
+<div class="summary-table-22"> 
+
+    
+
+  <h2>Booking Summary</h2>
+  
+  <table>
+    <tr>
+      <th>Date</th>
+      <td id="DateSelected">Select a date</td>
+    </tr>
+    <tr>
+      <th>Time</th>
+      <td id="timeSlotSelection">---</td>
+    </tr>
+    <tr>
+      <th>Duration</th>
+      <td id="VisitDuration">---</td>
+    </tr>
+    <tr>
+      <th>Tickets</th>
+      <th>Charges</th>
+    </tr>
+    <tr>
+      <td><div>SL Child: <span id="LankanChildTicket">0</span></div></td>
+      <td><div> <span id="LankanChildCharge">0</span> USD</div></td>
+    </tr>
+    <tr>
+      <td><div>SL Adult: <span id="LankanAdultTicket">0</span></div></td>
+      <td><div> <span id="LankanAdultCharge">0</span> USD</div></td>
+    </tr>
+    <tr>
+      <td><div>Foreigner Child: <span id="ForeignChildTicket">0</span></div></td>
+      <td><div> <span id="ForeignChildCharge">0</span> USD</div></td>
+    </tr>
+    <tr>
+      <td><div>Foreigner Adult: <span id="ForeignAdultTicket">0</span></div></td>
+      <td><div> <span id="ForeignAdultCharge">0</span> USD</div></td>
+    </tr>
+    <tr>
+      <td><div>Infant: <span id="InfantTicket">0</span></div></td>
+      <td><div> <span id="InfantCharge">0</span> USD</div></td>
+    </tr>
+    <tr>
+      <th>Total Payable</th>
+      <th id="PriceSummary">---</th>
+    </tr>
+  </table>
+  </div> 
+
+<script src="Ticket.js">
+
+</script>
+
+<div class="btn">
+  <a href="Details.html" class="hero-btn" id="visit-btn">Continue With Purchase</a>
+</div>
+
+</div>
+
+
+</body>
+</html>

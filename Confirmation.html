@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="confirmation.css">
+
+</head>
+<style>
+     table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+  }
+  th, td {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 8px;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.719);
+  }
+
+</style>
+<body>
+
+<div class="confirmation-container">
+    <h1>Confirmation</h1>
+    <div class="container">
+        <p>Thank you for your order.<br> Your order has been confirmed with us. You can show this confirmation at the entrance. <br>Following is the summary of your order.</p>
+    </div>
+    </div>
+
+    <div class="summary-table-22">
+       
+
+        <table>
+            
+            <div class="payment-summary">
+                <h2>Payment Summary</h2>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <td id="confirmedName"></td>
+                    </tr>
+                  <tr>
+                    <th>Date</th>
+                    <td id="DateSelected">---</td>
+                  </tr>
+                  <tr>
+                    <th>Time</th>
+                    <td id="timeSlotSelection">---</td>
+                  </tr>
+                  <tr>
+                    <th>Duration</th>
+                    <td id="VisitDuration">---</td>
+                  </tr>
+                  <tr>
+                    <th>Mobile Number</th>
+                    <td id="confirmedPhone"></td>
+                  </tr>
+                  <tr>
+                    <th>Email</th>
+                    <td id="confirmedEmail"></td>
+                  </tr>
+                  <tr>
+                    <th>Tickets</th>
+                    <th>Charges</th>
+                  </tr>
+                  <tr>
+                    <td><div>SL Child: <span id="LankanChildTicket">0</span></div></td>
+                    <td><div> <span id="LankanChildCharge">0</span> USD</div></td>
+                  </tr>
+                  <tr>
+                    <td><div>SL Adult: <span id="LankanAdultTicket">0</span></div></td>
+                    <td><div><span id="LankanAdultCharge">0</span> USD</div></td>
+                  </tr>
+                  <tr>
+                    <td><div>Foreigner Child: <span id="ForeignChildTicket">0</span></div></td>
+                    <td><div> <span id="ForeignChildCharge">0</span> USD</div></td>
+                  </tr>
+                  <tr>
+                    <td><div>Foreigner Adult: <span id="ForeignAdultTicket">0</span></div></td>
+                    <td><div> <span id="ForeignAdultCharge">0</span> USD</div></td>
+                  </tr>
+                  <tr>
+                    <td><div>Infant: <span id="InfantTicket">0</span></div></td>
+                    <td><div> <span id="InfantCharge">0</span> USD</div></td>
+                  </tr>
+                  <tr>
+                    <th>Total Payable</th>
+                    <th id="PriceSummary">---</th>
+                  </tr>
+                </table>
+              </div>
+        </table>
+    </div>
+
+
+
+
+<script src="Confirmation.js">
+
+</script>
+
+
+
+</body>
+</html>
